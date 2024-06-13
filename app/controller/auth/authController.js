@@ -48,6 +48,10 @@ const login = async (req, res) => {
         return sendErrorResponse(res, 500, "An Unexpected Error occurred! " + error.message);
     }
 };
+
+const hello = () => {
+    return sendSuccessResponse(res, "Registered Successfully!", 'Hello');
+}
 module.exports = {
     login,
     register,

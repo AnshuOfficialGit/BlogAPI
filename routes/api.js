@@ -12,6 +12,7 @@ const {
  * Auth Routes
  */
 router.group('/auth', (router) => {
+    router.get('/hello',authController.hello);
     router.post('/login', LoginValidation, validate, authController.login);
     router.post('/register', RegisterValidation, validate, authController.register);
 })
