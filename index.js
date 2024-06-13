@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 require('dotenv').config()
-const apiRoutes = require('./routes/api');
+const apiRoutes = require('./routes/api.js');
 const connectDB = require('./app/database/dbConfig.js');
 const port = process.env.PORT || 4500;
 connectDB();

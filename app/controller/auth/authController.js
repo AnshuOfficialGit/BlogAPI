@@ -55,4 +55,5 @@ const hello = () => {
 module.exports = {
     login,
     register,
+    hello
 }
